@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="title" class="container">
+        <h3>Questão 1</h3>
+        <p>Calculadora simples de 2 números</p>
+        <p>
+            1. Crie uma calculadora simples com dois números, via input text, e permita realizar as
+            operações de (+, -, * e /) ao pressionar o botão da respectiva operação.
+            <br>a. Debug as operações no browser
+            <br>b. Utilize o console.log para visualizar as informações no browser
+            <br>c. Adicione à calculadora um select (combobox) que permita selecionar a operação
+            desejada (+, -, * e /), e após selecionar a opção a operação correspondente é
+            realizada.
+        </p>
+    </div>
+
+    <div id="inputs" class="container">
+        <input type="text" name="num1" placeholder="Primeiro número">
+        <input type="text" name="num2" placeholder="Segundo número">
+        <select name="operator" onchange="calculateOnOperatorChange(this.value)">
+            <option value="none">Selecione uma operação</option>
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mult">*</option>
+            <option value="div">/</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <input disabled name="result" id="result" type="text" placeholder="Resultado">
+    </div>
+    
+</body>
+</html>
